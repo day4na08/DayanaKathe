@@ -3,7 +3,6 @@ import { useNavigate } from 'react-router-dom';
 import Cookies from 'universal-cookie';
 import '../../css/LogoutButton.css';
 
-
 const cookies = new Cookies();
 
 const LogoutButton = () => {
@@ -16,14 +15,22 @@ const LogoutButton = () => {
     cookies.remove('email', { path: '/' });
     cookies.remove('role', { path: '/' });
 
-    // Redirige a la página de inicio de sesión o a otra página
+    // Redirige a la página de inicio de sesión
     navigate('/Login');
   };
 
+  // Verifica si el usuario está autenticado
+  const isAuthenticated = cookies.get('id') !== undefined;
+
+  // Renderiza el botón solo si el usuario está autenticado
   return (
-    <button onClick={handleLogout} className="logout-button">
-      Cerrar Sesión
-    </button>
+    <>
+      {isAuthenticated && (
+        <button onClick={handleLogout} className="logout-button">
+          Cerrar Sesión
+        </button>
+      )}
+    </>
   );
 };
 

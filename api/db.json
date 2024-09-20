@@ -23,10 +23,17 @@
       "email": "santiago@gmail.com",
       "password": "25d55ad283aa400af464c76d713c07ad",
       "role": "user"
+    },
+    {
+      "id": "98bf",
+      "username": "katherin dayann",
+      "apellido": "villota ramirez",
+      "email": "kathyp.ramirez@gmail.com",
+      "password": "b5f659311e9fc44e7331b9342632ce04",
+      "role": "user"
     }
   ],
   "products": [
-    
     {
       "id": "679d",
       "name": "Sala En L Sofá Cama Multifuncional ",
@@ -53,9 +60,9 @@
         "imagen4": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMTEhUTExMVFhUXFxgXGRgYGBcXIRgaGhoWFxgYGRsYHSggGholHRgYIjEhJSkrLy4uFx8zODMtNygtLisBCgoKDg0OGxAQGy0mICUvLS01LS01NS0vNS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAMIBAwMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAAEBQACAwYBB//EAEEQAAIABAQEAwYDBwIFBQEAAAECAAMRIQQSMUEiUWFxBYGREzJCobHBUtHwBiMzYnLh8YKSFBWywtJTY3Oi4kP/xAAZAQACAwEAAAAAAAAAAAAAAAABBAACAwX/xAAoEQACAQMEAgICAgMAAAAAAAAAAQIDBBESITFRFEEiYRMycZFC0fD/2gAMAwEAAhEDEQA/APs5IhVivExfIwCj3ph07LzMDYlZ033iEX8IvX+o79o9wnh6i7EsRoDQBf6VFhAyTBJc0zv4S7U9q4/6R/iPMJ4ashcoNSTVmOrE7mD5TUiuLe8RhXJkpUcRNKRjNxymhA4fxmgHzgOdJecaAcA56MeZ5gcoZ4fAIq0IzHctev5RERmDPXTSMJ2GzAiDpsvlGNYmCZA5rKVFZYJ3NK33jFhlFaBB2oT94LZypJXfX84GaWP4jNm5D84umVaAZ3vLXU3pyUXgVHzZAdJisvmCSpgjEFlVpjDiayjpA00HNJQC4uYID0zi6Z60myjQnmBoT5Q98FVZjGdzUA23hPgvD2mTJgy0VrEx12Ew6y1CroIq2WL+zEegCA8b4mkshTUsdABX15QM0ibMOYuFWlkG/doBAmZ4imYovE3L+8B4g4hULVUm5AA05DrF2xUsAplAIqSNBbfNv9YWTcaxtUkVoPy/zGdStGmtzSnSlUexMVihPMpQaXDup6aA+f0gmZNDcL68tvKFnsqVINb32IPIj",
         "imagen5": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMTEhMSEhMVEhUVFxUVGBUVFRUVFxUVFRUXFxUVFRUYHSggGBolHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGxAQGy0lICUtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAKYBMAMBIgACEQEDEQH/xAAbAAABBQEBAAAAAAAAAAAAAAACAAEDBQYEB//EAD8QAAIBAgQEAwYDBwMCBwAAAAECAAMRBAUhMRJBUWEGcYETIjJSkbFCocEHFCNictHwU5LhM/EVNENjgqLi/8QAGQEAAwEBAQAAAAAAAAAAAAAAAAECAwQF/8QAJREAAgICAgICAgMBAAAAAAAAAAECESExAxITQSJRBDJhcZFC/9oADAMBAAIRAxEAPwD0OnigZMtSYbCeJKbc7Szo5uDswniXJbPT6Jmn44QMoaeaSdM1U7m0fYXjLn2kFqkqhj163hfvBI0lLInCjg8Ts7rwUwTfp/eU+FyggfxGA7DUy+xArsLLYSnrZPiCbk37bT0OOXHFVZyyjNs6KTUUGg4j31nDis4Y6KLCddPLagGqyvxOCYX90/SXKdr4sIRV5IqdcvcMxJj0aVjYyGhQcn3VJMuaWA0BchfvJjFzyU5KGEVNShrJcHhX2sbdTLl/ZoLgXPXeclTFse0pcai7bJfI5KkjgrYBFJJN+w2lRi97KJZVTZ7nWQY2kNxtHKqwhK7yV1Cj7wJ6z0HJ6oAAmCZrTS5Ri7gTi/IWjp4ja0TCacOBxNxO5ZjCWBTjTEphwSI5HSapmVDiPBtClpk0NE0Ixo7AGEIrRR2AiIxjkxzGIYRzFFAB1ENYKwxACRZ5v+0mo3tFVTbQ+s9IWeW/tCqE4gW5CO6HFWzD1qf1hYLMGpnfSX1HJnrC9uHudJMckoUhxVTxHvt9JXiclnRfkUXaM"
       },
-      
       "userId": 1
-    }, {
+    },
+    {
       "id": "679d",
       "name": "Sala En L Sofá Cama Multifuncional ",
       "material": "madera triplex",
@@ -81,10 +88,36 @@
         "imagen4": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMTEhUTExMVFhUXFxgXGRgYGBcXIRgaGhoWFxgYGRsYHSggGholHRgYIjEhJSkrLy4uFx8zODMtNygtLisBCgoKDg0OGxAQGy0mICUvLS01LS01NS0vNS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAMIBAwMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAAEBQACAwYBB//EAEEQAAIABAQEAwYDBwIFBQEAAAECAAMRIQQSMUEiUWFxBYGREzJCobHBUtHwBiMzYnLh8YKSFBWywtJTY3Oi4kP/xAAZAQACAwEAAAAAAAAAAAAAAAABBAACAwX/xAAoEQACAQMEAgICAgMAAAAAAAAAAQIDBBESITFRFEEiYRMycZFC0fD/2gAMAwEAAhEDEQA/APs5IhVivExfIwCj3ph07LzMDYlZ033iEX8IvX+o79o9wnh6i7EsRoDQBf6VFhAyTBJc0zv4S7U9q4/6R/iPMJ4ashcoNSTVmOrE7mD5TUiuLe8RhXJkpUcRNKRjNxymhA4fxmgHzgOdJecaAcA56MeZ5gcoZ4fAIq0IzHctev5RERmDPXTSMJ2GzAiDpsvlGNYmCZA5rKVFZYJ3NK33jFhlFaBB2oT94LZypJXfX84GaWP4jNm5D84umVaAZ3vLXU3pyUXgVHzZAdJisvmCSpgjEFlVpjDiayjpA00HNJQC4uYID0zi6Z60myjQnmBoT5Q98FVZjGdzUA23hPgvD2mTJgy0VrEx12Ew6y1CroIq2WL+zEegCA8b4mkshTUsdABX15QM0ibMOYuFWlkG/doBAmZ4imYovE3L+8B4g4hULVUm5AA05DrF2xUsAplAIqSNBbfNv9YWTcaxtUkVoPy/zGdStGmtzSnSlUexMVihPMpQaXDup6aA+f0gmZNDcL68tvKFnsqVINb32IPIj",
         "imagen5": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMTEhMSEhMVEhUVFxUVGBUVFRUVFxUVFRUXFxUVFRUYHSggGBolHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGxAQGy0lICUtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAKYBMAMBIgACEQEDEQH/xAAbAAABBQEBAAAAAAAAAAAAAAACAAEDBQYEB//EAD8QAAIBAgQEAwYDBwMCBwAAAAECAAMRBAUhMRJBUWEGcYETIjJSkbFCocEHFCNictHwU5LhM/EVNENjgqLi/8QAGQEAAwEBAQAAAAAAAAAAAAAAAAECAwQF/8QAJREAAgICAgICAgMBAAAAAAAAAAECESExAxITQSJRBDJhcZFC/9oADAMBAAIRAxEAPwD0OnigZMtSYbCeJKbc7Szo5uDswniXJbPT6Jmn44QMoaeaSdM1U7m0fYXjLn2kFqkqhj163hfvBI0lLInCjg8Ts7rwUwTfp/eU+FyggfxGA7DUy+xArsLLYSnrZPiCbk37bT0OOXHFVZyyjNs6KTUUGg4j31nDis4Y6KLCddPLagGqyvxOCYX90/SXKdr4sIRV5IqdcvcMxJj0aVjYyGhQcn3VJMuaWA0BchfvJjFzyU5KGEVNShrJcHhX2sbdTLl/ZoLgXPXeclTFse0pcai7bJfI5KkjgrYBFJJN+w2lRi97KJZVTZ7nWQY2kNxtHKqwhK7yV1Cj7wJ6z0HJ6oAAmCZrTS5Ri7gTi/IWjp4ja0TCacOBxNxO5ZjCWBTjTEphwSI5HSapmVDiPBtClpk0NE0Ixo7AGEIrRR2AiIxjkxzGIYRzFFAB1ENYKwxACRZ5v+0mo3tFVTbQ+s9IWeW/tCqE4gW5CO6HFWzD1qf1hYLMGpnfSX1HJnrC9uHudJMckoUhxVTxHvt9JXiclnRfkUXaM"
       },
-      
+      "userId": 1
+    },
+    {
+      "id": "9027",
+      "name": "Sala en L 5 puestos",
+      "material": "madera triplex",
+      "estilo": "Moderno",
+      "tela": "Telabonita",
+      "acabado": "Liso",
+      "color": "Azul Marino",
+      "tapizMaterial": "Tela",
+      "materialInterno": "Espuma",
+      "precio": 3500000,
+      "descripcion": "",
+      "requiereArmado": "No",
+      "alto": "",
+      "ancho": "",
+      "profundidad": "",
+      "pesoNeto": "",
+      "autor": "admin123",
+      "cantidad": 5,
+      "imagenes": {
+        "imagen1": "",
+        "imagen2": "",
+        "imagen3": "",
+        "imagen4": "",
+        "imagen5": ""
+      },
       "userId": 1
     }
-    
   ],
   "purchases": [
     {
@@ -112,5 +145,4 @@
       }
     }
   ]
-
 }

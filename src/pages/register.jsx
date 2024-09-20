@@ -5,7 +5,8 @@ import md5 from 'md5';
 import '../css/logreg.css';
 import Cookies from 'universal-cookie';
 import Navbar from '../components/Navbar';
-import Footer from '../components/Footer'; 
+import Footer from '../components/Footer';
+import logo from '../images/logo-small.png'; // Asegúrate de que la ruta sea correcta
 
 const baseUrl = "http://localhost:3001/users";
 const cookies = new Cookies();
@@ -18,26 +19,37 @@ class Register extends Component {
             email: '',
             password: '',
             verifyPassword: '',
-            role: 'user' 
+            role: 'user',
         },
         error: '',
         success: false,
-        redirect: null 
-    }
+        redirect: null,
+        acceptedTerms: false, // Estado para los términos
+    };
 
-    handleChange = e => {
+    handleChange = (e) => {
         this.setState({
             form: {
                 ...this.state.form,
-                [e.target.name]: e.target.value
-            }
+                [e.target.name]: e.target.value,
+            },
         });
-    }
+    };
+
+    handleCheckboxChange = (e) => {
+        this.setState({ acceptedTerms: e.target.checked });
+    };
 
     handleSubmit = async (event) => {
-        event.preventDefault(); 
+        event.preventDefault();
 
         const { password, verifyPassword } = this.state.form;
+        const { acceptedTerms } = this.state; // Acceder correctamente al estado
+
+        if (!acceptedTerms) {
+            this.setState({ error: 'Debes aceptar los términos y condiciones.' });
+            return;
+        }
 
         if (password.length < 8) {
             this.setState({ error: 'La contraseña debe tener al menos 8 caracteres.' });
@@ -60,25 +72,23 @@ class Register extends Component {
                     apellido: this.state.form.apellido,
                     email: this.state.form.email,
                     password: md5(this.state.form.password),
-                    role: this.state.form.role
+                    role: this.state.form.role,
                 };
 
                 await axios.post(baseUrl, newUser);
-                this.setState({ success: true });
-                this.setState({ redirect: '/' }); 
+                this.setState({ success: true, redirect: '/login' }); // Redirigir a inicio de sesión
             }
         } catch (error) {
             console.log(error);
             this.setState({ error: 'Error al intentar registrar el usuario' });
         }
-    }
+    };
 
     componentDidMount() {
-
         const role = cookies.get('role');
         if (role) {
             this.setState({
-                redirect: role === 'admin' ? '/Adminmenu' : '/'
+                redirect: role === 'admin' ? '/Adminmenu' : '/',
             });
         }
     }
@@ -93,10 +103,11 @@ class Register extends Component {
                 <Navbar />
                 <div className='n'>
                     <div className="form-container">
+                        <img src={logo} alt="Logo" className="logo" />
                         <h2>Registro</h2>
                         <form onSubmit={this.handleSubmit} autoComplete="off">
                             <div className="input-group">
-                                <label htmlFor="username">Nombre de usuario</label>
+                                <label htmlFor="username">Nombres</label>
                                 <input
                                     type="text"
                                     id="username"
@@ -107,7 +118,7 @@ class Register extends Component {
                                 />
                             </div>
                             <div className="input-group">
-                                <label htmlFor="apellido">Apellido</label>
+                                <label htmlFor="apellido">Apellidos</label>
                                 <input
                                     type="text"
                                     id="apellido"
@@ -151,15 +162,29 @@ class Register extends Component {
                                 />
                             </div>
 
+                            <div className="input-group">
+                                <input
+                                    type="checkbox"
+                                    id="terms"
+                                    name="terms"
+                                    checked={this.state.acceptedTerms}
+                                    onChange={this.handleCheckboxChange}
+                                    required
+                                />
+                                <label htmlFor="terms">
+                                    Acepto los <a href="/terms" target="_blank" rel="noopener noreferrer">términos y condiciones</a>
+                                </label>
+                            </div>
+
                             {this.state.error && <p className="error">{this.state.error}</p>}
-                            <button type="submit" className="btnlr">Registrarse</button>
+                            <button type="submit" className="btn">Registrarse</button>
                         </form>
-                        <p>¿Ya tienes una cuenta? <Link to="/">Inicia sesión aquí</Link></p>
+                        <p>¿Ya tienes una cuenta? <Link to="/login">Inicia sesión aquí</Link></p>
                     </div>
                 </div>
                 <Footer />
             </div>
-        )
+        );
     }
 }
 

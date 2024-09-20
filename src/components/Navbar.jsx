@@ -8,6 +8,7 @@ import '../css/Navbar.css';
 import AccountDropdown from './user/AccountDropdown';
 import { CartContext } from './CartContext'; // Asegúrate de que esta ruta sea correcta
 import LogoutButton from './user/LogoutButton';
+import UserCartFavorites from './UserCartFavorites';
 
 
 const cookies = new Cookies();
@@ -195,17 +196,11 @@ const NavBar = () => {
                             )}
                           </li>
                         <li className="list">
-                            <Link to="/" className="nav-link">
+                            <Link to="/UserCartFavorites" className="nav-link">
                                 <i className='bx bx-heart icon'></i>
-                                <span className="link">Favoritas</span>
+                                <span className="link">Favoritos</span>
                             </Link>
                         </li>
-                        <li className="list">
-                          <Link to="/Favoritos" className="nav-link">
-                          <i className="bx bx-trending-up icon" />
-                            <span className="link">Tendencias</span>
-                            </Link>
-                          </li>
                     </ul>
                     <div className="bottom-cotent">
                         <ul className="lists">

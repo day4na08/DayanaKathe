@@ -15,6 +15,7 @@ import Index from "../pages/Index.jsx";
 import ProductCrud from '../components/ProductCrud'
 import AdminPage from "../pages/Admin.jsx";
 import UserPage from "../pages/User.jsx";
+import UserCartFavorites from "../components/UserCartFavorites.jsx";
 
 
 function App() {
@@ -36,6 +37,7 @@ function App() {
         <Route path="/ProductCrud" element={<ProductCrud />} />
         <Route path="/admin" element={<AdminPage />} />
         <Route path="/user" element={<UserPage />} />
+        <Route path="/UserCartFavorites" element={<UserCartFavorites/>} />
 
 
 
