@@ -1,5 +1,4 @@
-/* logreg.css */
-
+/* General */
 .n {
     font-family: Arial, sans-serif;
     background-color: #f0f8ff; /* Color de fondo suave */
@@ -11,6 +10,7 @@
     box-sizing: border-box; /* Asegura que el padding no afecte el ancho */
 }
 
+/* Contenedor del formulario */
 .form-container {
     background-color: #ffffff;
     padding: 40px; /* Espacio interior */
@@ -26,6 +26,7 @@
     transform: translateY(-5px); /* Levanta el contenedor al pasar el mouse */
 }
 
+/* Logo */
 .logo {
     display: block;
     margin: 0 auto 20px; /* Centra la imagen */
@@ -33,6 +34,7 @@
     height: auto; /* Mantiene la proporción de la imagen */
 }
 
+/* Títulos */
 h2 {
     margin-bottom: 20px;
     color: #333;
@@ -40,6 +42,7 @@ h2 {
     font-weight: 700; /* Grosor de la fuente */
 }
 
+/* Grupos de entrada */
 .input-group {
     margin-bottom: 20px; /* Mayor separación entre grupos */
 }
@@ -65,6 +68,7 @@ h2 {
     outline: none; /* Quita el contorno por defecto */
 }
 
+/* Botón */
 .btn {
     width: 100%;
     padding: 14px; /* Aumenta el padding */
@@ -83,12 +87,14 @@ h2 {
     transform: translateY(-2px); /* Efecto de elevación */
 }
 
+/* Mensajes de error */
 .error {
     color: red; /* Color del mensaje de error */
     margin-top: 10px; /* Espacio superior */
     font-weight: bold; /* Aumenta el grosor de la fuente */
 }
 
+/* Texto y enlaces */
 p {
     margin-top: 15px;
     color: #666;
@@ -104,8 +110,42 @@ p a:hover {
     text-decoration: underline; /* Subrayar al pasar el mouse */
 }
 
+/* Términos */
 .terms {
     margin-top: 10px; /* Espacio para el texto de términos */
     font-size: 14px; /* Tamaño de fuente más pequeño */
     color: #777; /* Color más suave */
+}
+
+/* Contenedor de contraseña */
+.password-container {
+    position: relative;
+    margin-top: 10px; /* Añade margen superior para separar del label */
+}
+
+.password-container input {
+    width: 100%;
+    padding: 14px 50px 14px 14px; /* Aumenta el padding a la derecha para el botón */
+    border: 2px solid #007bff; /* Bordes más gruesos y coloridos */
+    border-radius: 8px; /* Bordes redondeados */
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho */
+    transition: border-color 0.3s; /* Transición suave */
+}
+
+.eye-button {
+    position: absolute;
+    right: 15px; /* Ajusta para centrar mejor el icono */
+    top: 50%;
+    transform: translateY(-50%); /* Centra verticalmente el botón */
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    outline: none;
+    color: #aaa; /* Color del ícono */
+    font-size: 1.2em; /* Tamaño del ícono */
+    transition: color 0.3s;
+}
+
+.eye-button:hover {
+    color: #333; /* Color al pasar el mouse */
 }

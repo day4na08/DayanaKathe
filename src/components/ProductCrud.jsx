@@ -141,7 +141,7 @@ const ProductCrud = () => {
     const estiloOptions = ["", "Contemporáneo", "Rústico", "Moderno"];
     const telaOptions = ["", "Cuero", "Telabonita", "Lino"];
     const acabadoOptions = ["", "Cuero", "Aceite", "Liso", "Transparente", "Mate", "Brillante"];
-    const colorOptions = ["", "Negro", "Madera", "Blanco", "Azul Marino", "Marrón"];
+    const colorOptions = ["", "Negro", "Madera", "Blanco", "Azul Marino", "Marrón", "Gris"];
     const tapizMaterialOptions = ["", "Cuero", "Tela"];
     const materialInternoOptions = ["", "Triplex", "Contrachapado", "Espuma", "Metal"];
 

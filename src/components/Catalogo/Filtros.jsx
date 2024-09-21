@@ -9,12 +9,12 @@ function Filtros({ filtros, setFiltros }) {
     });
   };
 
-  const estilos = ["", "Contemporáneo", "Rústico", "Moderno"];
-  const telas = ["", "Cuero", "Telabonita", "Lino"];
-  const acabados = ["", "Cuero", "Aceite", "Liso", "Transparente", "Mate", "Brillante"];
-  const colores = ["", "Negro", "Madera", "Blanco", "Azul Marino", "Marrón"];
-  const tapizMateriales = ["", "Cuero", "Tela"];
-  const materialesInternos = ["", "Triplex", "Contrachapado", "Espuma", "Metal"];
+  const estilos = ["", "Japonés", "Contemporáneo", "Rústico", "Moderno"];
+  const telas = ["", "Canvas", "Cuero", "Telabonita", "Lino"];
+  const acabados = ["", "Natural", "Aceite", "Liso", "Transparente", "Mate", "Brillante"];
+  const colores = ["", "Beige Claro", "Negro", "Madera", "Blanco", "Azul Marino", "Marrón"];
+  const tapizMateriales = ["", "Canvas", "Cuero", "Tela"];
+  const materialesInternos = ["", "Fibras naturales", "Triplex", "Contrachapado", "Espuma", "Metal"];
 
   return (
     <div className="filtros-container">
@@ -24,7 +24,7 @@ function Filtros({ filtros, setFiltros }) {
         <span>Categoría: </span>
         <select name="categoria" value={filtros.categoria} onChange={handleChange}>
           <option value="">Todas</option>
-          <option value="mueble">Mueble</option>
+          <option value="Mueble">Mueble</option>
         </select>
       </label>
 
@@ -60,6 +60,24 @@ function Filtros({ filtros, setFiltros }) {
         <select name="color" value={filtros.color} onChange={handleChange}>
           {colores.map(color => (
             <option key={color} value={color}>{color}</option>
+          ))}
+        </select>
+      </label>
+
+      <label>
+        <span>Tapiz Material: </span>
+        <select name="tapizMaterial" value={filtros.tapizMaterial} onChange={handleChange}>
+          {tapizMateriales.map(tapiz => (
+            <option key={tapiz} value={tapiz}>{tapiz}</option>
+          ))}
+        </select>
+      </label>
+
+      <label>
+        <span>Material Interno: </span>
+        <select name="materialInterno" value={filtros.materialInterno} onChange={handleChange}>
+          {materialesInternos.map(material => (
+            <option key={material} value={material}>{material}</option>
           ))}
         </select>
       </label>

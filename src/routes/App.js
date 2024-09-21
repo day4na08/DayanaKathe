@@ -16,6 +16,8 @@ import ProductCrud from '../components/ProductCrud'
 import AdminPage from "../pages/Admin.jsx";
 import UserPage from "../pages/User.jsx";
 import UserCartFavorites from "../components/UserCartFavorites.jsx";
+import RecoverPassword from "../components/RecoverPassword.jsx";
+import ResetPassword from "../components/ResetPassword.jsx";
 
 
 function App() {
@@ -38,22 +40,8 @@ function App() {
         <Route path="/admin" element={<AdminPage />} />
         <Route path="/user" element={<UserPage />} />
         <Route path="/UserCartFavorites" element={<UserCartFavorites/>} />
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        <Route path="/recover-password" element={<RecoverPassword />} />
+        <Route path="/reset-password/:token" element={<ResetPassword />} />
 
 
       </Routes>
