@@ -181,7 +181,6 @@ class Register extends Component {
                             </div>
                             <div className="input-group">
                                 <label htmlFor="password">Contraseña</label>
-                                <div className="password-container">
                                     <input
                                         type={this.state.showPassword ? "text" : "password"}
                                         id="password"
@@ -198,12 +197,10 @@ class Register extends Component {
                                     >
                                         <i className={this.state.showPassword ? 'fas fa-eye' : 'fas fa-eye-slash'}></i>
                                     </button>
-                                </div>
                                 {this.state.formErrors.password && <p className="error">{this.state.formErrors.password}</p>}
                             </div>
                             <div className="input-group">
                                 <label htmlFor="verifyPassword">Verificar Contraseña</label>
-                                <div className="password-container">
                                     <input
                                         type={this.state.showVerifyPassword ? "text" : "password"}
                                         id="verifyPassword"
@@ -220,12 +217,11 @@ class Register extends Component {
                                     >
                                         <i className={this.state.showVerifyPassword ? 'fas fa-eye' : 'fas fa-eye-slash'}></i>
                                     </button>
-                                </div>
                                 {this.state.formErrors.verifyPassword && <p className="error">{this.state.formErrors.verifyPassword}</p>}
                             </div>
 
-                            <div className="input-group">
-                                <input
+                            <div className="terms">
+                            <input
                                     type="checkbox"
                                     id="terms"
                                     name="terms"
@@ -239,7 +235,9 @@ class Register extends Component {
                             </div>
 
                             {this.state.error && <p className="error">{this.state.error}</p>}
+                            <div className="btn-enter">
                             <button type="submit" className="btn">Registrarse</button>
+                            </div>
                         </form>
                         <p>¿Ya tienes una cuenta? <Link to="/login">Inicia sesión aquí</Link></p>
                     </div>

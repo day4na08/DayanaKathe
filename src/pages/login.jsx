@@ -129,6 +129,7 @@ class Login extends Component {
                                     type="email"
                                     id="email"
                                     name="email"
+                                    placeholder="correo@ejemplo.com"
                                     value={form.email}
                                     onChange={this.handleChange}
                                     required
@@ -142,6 +143,7 @@ class Login extends Component {
                                     type={showPassword ? 'text' : 'password'}
                                     id="password"
                                     name="password"
+                                    placeholder="Ingrese su contraseña"
                                     value={form.password}
                                     onChange={this.handleChange}
                                     required
@@ -157,9 +159,11 @@ class Login extends Component {
                                 {!isPasswordValid && <p className="error">La contraseña debe tener al menos 8 caracteres.</p>}
                             </div>
                             {this.state.error && <p className="error">{this.state.error}</p>}
+                            <div className="btn-enter">
                             <button type="submit" className="btn" disabled={!isFormValid || isLoading}>
                                 {isLoading ? 'Cargando...' : 'Iniciar Sesión'}
                             </button>
+                            </div>
                             <p><Link to="/recover-password">¿Olvidaste tu contraseña?</Link></p>
                         </form>
                         <p>¿No tienes una cuenta? <Link to="/Register">Regístrate aquí</Link></p>

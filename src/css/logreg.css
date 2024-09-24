@@ -43,6 +43,7 @@ h2 {
 }
 
 /* Grupos de entrada */
+
 .input-group {
     margin-bottom: 20px; /* Mayor separación entre grupos */
 }
@@ -56,9 +57,9 @@ h2 {
 
 .input-group input {
     width: 100%;
+    border-radius: 10px 1;
     padding: 14px; /* Aumenta el padding */
-    border: 2px solid #007bff; /* Bordes más gruesos y coloridos */
-    border-radius: 8px; /* Bordes redondeados */
+    border: 2px solid #007bff; /* Bordes más gruesos y coloridos */ /* Bordes redondeados */
     box-sizing: border-box; /* Asegura que el padding no afecte el ancho */
     transition: border-color 0.3s; /* Transición suave */
 }
@@ -69,22 +70,34 @@ h2 {
 }
 
 /* Botón */
-.btn {
-    width: 100%;
-    padding: 14px; /* Aumenta el padding */
-    background-color: #28a745; /* Color verde para el botón */
-    color: white;
-    border: none;
-    border-radius: 8px; /* Bordes redondeados */
-    cursor: pointer;
-    font-size: 20px; /* Aumenta el tamaño de la fuente */
-    font-weight: bold; /* Negrita en el texto */
-    transition: background-color 0.3s, transform 0.3s; /* Transiciones suaves */
+
+/* Estilos para el contenedor del botón */
+.btn-enter {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Separación adicional arriba */
+    margin-bottom: 20px;
 }
 
-.btn:hover {
-    background-color: #218838; /* Color más oscuro al pasar el mouse */
-    transform: translateY(-2px); /* Efecto de elevación */
+/* Estilos para el botón */
+.btn-enter .btn {
+    color: #ffffff; /* Color de la fuente blanco */
+    background-color: #0056b3; /* Color de fondo azul */
+    border: none; /* Sin borde por defecto */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 12px 24px; /* Espaciado del botón */
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s, color 0.3s; /* Transiciones suaves */
+}
+
+/* Estilos para el hover del botón */
+.btn-enter .btn:hover {
+    background-color: #ffffff; /* Cambia el fondo a blanco al hacer hover */
+    color: #333; /* Cambia el color del texto a gris al hacer hover */
+    border: 2px solid #007bff; /* Añade un borde azul al hacer hover */
+    outline: none;
 }
 
 /* Mensajes de error */
@@ -112,37 +125,25 @@ p a:hover {
 
 /* Términos */
 .terms {
-    margin-top: 10px; /* Espacio para el texto de términos */
-    font-size: 14px; /* Tamaño de fuente más pequeño */
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #555; /* Tamaño de fuente más pequeño */
     color: #777; /* Color más suave */
 }
-
+.terms input {
+    font-size: 1.5rem;
+    margin-right: 15px;
+}
 /* Contenedor de contraseña */
-.password-container {
-    position: relative;
-    margin-top: 10px; /* Añade margen superior para separar del label */
-}
-
-.password-container input {
-    width: 100%;
-    padding: 14px 50px 14px 14px; /* Aumenta el padding a la derecha para el botón */
-    border: 2px solid #007bff; /* Bordes más gruesos y coloridos */
-    border-radius: 8px; /* Bordes redondeados */
-    box-sizing: border-box; /* Asegura que el padding no afecte el ancho */
-    transition: border-color 0.3s; /* Transición suave */
-}
-
 .eye-button {
     position: absolute;
-    right: 15px; /* Ajusta para centrar mejor el icono */
-    top: 50%;
-    transform: translateY(-50%); /* Centra verticalmente el botón */
-    border: none;
+    right: 0px; /* Ajusta para centrar mejor el icono */
+    top: 40%; 
     background: transparent;
     cursor: pointer;
     outline: none;
     color: #aaa; /* Color del ícono */
-    font-size: 1.2em; /* Tamaño del ícono */
+    font-size: 1.3em; /* Tamaño del ícono */
     transition: color 0.3s;
 }
 
